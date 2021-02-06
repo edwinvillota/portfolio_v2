@@ -1,6 +1,10 @@
-import React from 'react'
-import { Text } from 'components/atoms'
+import React from 'react';
+import { Text } from 'components/atoms';
 
-const App: React.FC = () => <div><Text/></div>
+const App: React.FC = () => (
+  <div>
+    <Text />
+  </div>
+);
 
-export default App
+export default App;

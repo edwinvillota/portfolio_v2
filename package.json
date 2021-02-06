@@ -6,7 +6,18 @@
   "scripts": {
     "start": "sh ./scripts/start.sh",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -37,8 +48,13 @@
     "@typescript-eslint/parser": "^4.14.2",
     "babel-loader": "^8.2.2",
     "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "html-webpack-plugin": "^5.0.0",
+    "husky": "^5.0.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "ts-loader": "^8.0.15",
     "webpack": "^5.21.1",
     "webpack-cli": "^4.5.0",

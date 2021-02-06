@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const Text : React.FC = () => (
-    <span>Hello World!!</span>
-)
+const Text: React.FC = () => <span>Hello World!!</span>;
 
-export default Text
+export default Text;
