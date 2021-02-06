@@ -1,11 +1,12 @@
 import { DefaultTheme } from 'styled-components';
 
 const LightTheme: DefaultTheme = {
-  borderRadius: '5px',
-
   colors: {
-    main: 'cyan',
-    secondary: 'magenta',
+    main: '#F05454',
+    secondary: '#30475E',
+    background: '#FFFFFF',
+    text: '#000000',
+    gray: '#DDDDDD',
   },
 };
 
