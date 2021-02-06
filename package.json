@@ -1,9 +1,11 @@
 {
-  "name": "React_Tests",
+  "name": "react_tests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "sh ./scripts/start.sh",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +30,7 @@
     "html-webpack-plugin": "^5.0.0",
     "ts-loader": "^8.0.15",
     "webpack": "^5.21.1",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
