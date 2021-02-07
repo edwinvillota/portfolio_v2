@@ -4,16 +4,23 @@ import { ThemeProvider } from 'styled-components';
 import { LightTheme } from 'styles/themes';
 import { GlobalStyle } from 'styles/Global';
 
-import { Home } from 'components/views';
+import { AppTemplate } from 'components/templates';
+
+import { About, Dashboard, Gallery, Home } from 'components/views';
 
 const App: React.FC = () => (
   <>
     <ThemeProvider theme={LightTheme}>
       <GlobalStyle />
       <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
+        <AppTemplate>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/gallery" component={Gallery} />
+          </Switch>
+        </AppTemplate>
       </Router>
     </ThemeProvider>
   </>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from './styles';
 
-const Home: React.FC = () => (
+const About: React.FC = () => (
   <Container>
-    <h1>Home View</h1>
+    <h1>About View</h1>
   </Container>
 );
 
-export default Home;
+export default About;
