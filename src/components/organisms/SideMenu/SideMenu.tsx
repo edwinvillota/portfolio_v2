@@ -6,7 +6,7 @@ const SideMenu: React.FC = () => (
     <SideMenuToogleButton />
     <SideMenuLink to="/">Home</SideMenuLink>
     <SideMenuLink to="/dashboard">Dashboard</SideMenuLink>
-    <SideMenuLink to="/gallery">Gallery</SideMenuLink>
+    <SideMenuLink to="/users">Users</SideMenuLink>
     <SideMenuLink to="/about">About</SideMenuLink>
   </Container>
 );

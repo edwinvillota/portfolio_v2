@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const { triggerAsyncId } = require('async_hooks');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: './src/index.html',
@@ -33,10 +34,12 @@ module.exports = () => {
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
     },
     plugins: [htmlPlugin],
     devServer: {
       contentBase: path.join(__dirname, 'dist'),
+      historyApiFallback: true,
       compress: true,
       port: 3000,
     },

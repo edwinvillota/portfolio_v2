@@ -6,7 +6,7 @@ import { GlobalStyle } from 'styles/Global';
 
 import { AppTemplate } from 'components/templates';
 
-import { About, Dashboard, Gallery, Home } from 'components/views';
+import { About, Dashboard, Users, Home } from 'components/views';
 
 const App: React.FC = () => (
   <>
@@ -18,7 +18,7 @@ const App: React.FC = () => (
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/users" component={Users} />
           </Switch>
         </AppTemplate>
       </Router>

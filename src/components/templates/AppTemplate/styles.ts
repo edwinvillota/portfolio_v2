@@ -6,10 +6,14 @@ export const Container = styled.div`
 
 export const Nav = styled.nav`
   display: flex;
-  width: 300px;
+  min-width: 300px;
 `;
 
 export const View = styled.div`
   display: flex;
-  padding: 2rem;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 4rem;
 `;
