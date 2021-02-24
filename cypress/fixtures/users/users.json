@@ -1,0 +1,180 @@
+{ 
+  "info": {
+    "page": 1,
+    "results": 5,
+    "seed": "22c0f7f60651701d",
+    "version": "1.3"
+  },
+  "results" : [
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Leah", "last": "Morris" },
+      "location": {
+        "street": { "number": 5649, "name": "Nelson Street" },
+        "city": "Auckland",
+        "state": "Hawke'S Bay",
+        "country": "New Zealand",
+        "postcode": 70734,
+        "coordinates": { "latitude": "59.1190", "longitude": "91.9218" },
+        "timezone": { "offset": "+11:00", "description": "Magadan, Solomon Islands, New Caledonia" }
+      },
+      "email": "leah.morris@example.com",
+      "login": {
+        "uuid": "88df9904-ae7d-493f-a2ae-7c013e230a0b",
+        "username": "whiteladybug821",
+        "password": "passmast",
+        "salt": "5D1Ko8yi",
+        "md5": "b42d89d04058b94edc7216e933d3045e",
+        "sha1": "bca53512f5091838d9ba3b1c5b14e05d12726803",
+        "sha256": "517a883c6200acdba9b9c973b40fa7b43a5de0cb511db8d196f038d2e41b77b5"
+      },
+      "dob": { "date": "1944-10-26T01:29:42.653Z", "age": 77 },
+      "registered": { "date": "2003-06-02T06:27:40.648Z", "age": 18 },
+      "phone": "(912)-060-7863",
+      "cell": "(578)-050-2551",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/23.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/23.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/23.jpg"
+      },
+      "nat": "NZ"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Samantha", "last": "Soto" },
+      "location": {
+        "street": { "number": 3746, "name": "Grange Road" },
+        "city": "Lincoln",
+        "state": "South Yorkshire",
+        "country": "United Kingdom",
+        "postcode": "KO2F 1TE",
+        "coordinates": { "latitude": "59.4636", "longitude": "57.7828" },
+        "timezone": { "offset": "0:00", "description": "Western Europe Time, London, Lisbon, Casablanca" }
+      },
+      "email": "samantha.soto@example.com",
+      "login": {
+        "uuid": "58ce1804-8918-4bdd-b753-7c08b3ac881b",
+        "username": "bluedog189",
+        "password": "poetry",
+        "salt": "GSmOXGGh",
+        "md5": "c27d3e6351dc4d8c690acc7d8c7aadb3",
+        "sha1": "d7b6c5dc2a93b9d85fc0db5dc14ebcaf449c45ca",
+        "sha256": "1b25e4ec10de8e88556c17e2c475fbb448496907440e988f11ce8bc5fe65314d"
+      },
+      "dob": { "date": "1984-09-25T14:03:12.616Z", "age": 37 },
+      "registered": { "date": "2017-01-23T02:14:43.483Z", "age": 4 },
+      "phone": "016973 79854",
+      "cell": "0708-167-688",
+      "id": { "name": "NINO", "value": "NK 40 51 76 R" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/47.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/47.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/47.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Sélène", "last": "Leclercq" },
+      "location": {
+        "street": { "number": 4151, "name": "Place de L'Europe" },
+        "city": "Nice",
+        "state": "Hautes-Alpes",
+        "country": "France",
+        "postcode": 39307,
+        "coordinates": { "latitude": "-58.0542", "longitude": "-113.4882" },
+        "timezone": { "offset": "+6:00", "description": "Almaty, Dhaka, Colombo" }
+      },
+      "email": "selene.leclercq@example.com",
+      "login": {
+        "uuid": "1bd7b765-3532-49e1-b5c4-00db9e2681b2",
+        "username": "bluegoose897",
+        "password": "seeking",
+        "salt": "2rIE1UcO",
+        "md5": "6d89e8a465c4499b9750e3b91836c1b3",
+        "sha1": "dd2479e4ed4db5cdfdbb9f6a9f7efdd33fc461c5",
+        "sha256": "3a5b27395e797a939f078200f8a07aa0264cf0c964bef91111f87a992b57e6c2"
+      },
+      "dob": { "date": "1976-06-22T08:12:10.235Z", "age": 45 },
+      "registered": { "date": "2012-11-24T16:28:35.899Z", "age": 9 },
+      "phone": "01-24-77-44-35",
+      "cell": "06-02-68-52-71",
+      "id": { "name": "INSEE", "value": "2NNaN69303745 32" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/81.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/81.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/81.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Alice", "last": "Tremblay" },
+      "location": {
+        "street": { "number": 3991, "name": "Tecumseh Rd" },
+        "city": "Notre Dame de Lourdes",
+        "state": "New Brunswick",
+        "country": "Canada",
+        "postcode": "O0O 9D5",
+        "coordinates": { "latitude": "-73.8618", "longitude": "-39.8122" },
+        "timezone": { "offset": "+5:45", "description": "Kathmandu" }
+      },
+      "email": "alice.tremblay@example.com",
+      "login": {
+        "uuid": "ed4d87f2-7a27-48f1-abf6-2cb218149ca5",
+        "username": "crazybutterfly129",
+        "password": "shun",
+        "salt": "kZ7ogEGc",
+        "md5": "a6a53b38dff1fd28fa0b268aa400a57c",
+        "sha1": "cb3e837f88f9c97ae16057bb75b6476a8ece884e",
+        "sha256": "2c67a538fd565e3ceb1420c31ba6c37639a347e84da69abfad0abc1efbbded62"
+      },
+      "dob": { "date": "1978-05-08T00:50:57.852Z", "age": 43 },
+      "registered": { "date": "2002-09-26T21:52:09.303Z", "age": 19 },
+      "phone": "708-112-2037",
+      "cell": "971-229-9983",
+      "id": { "name": "", "value": null },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/8.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/8.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/8.jpg"
+      },
+      "nat": "CA"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Paul", "last": "Woods" },
+      "location": {
+        "street": { "number": 5748, "name": "Oaks Cross" },
+        "city": "Westminster",
+        "state": "Dorset",
+        "country": "United Kingdom",
+        "postcode": "UA9 6BG",
+        "coordinates": { "latitude": "-15.3587", "longitude": "95.5350" },
+        "timezone": { "offset": "-12:00", "description": "Eniwetok, Kwajalein" }
+      },
+      "email": "paul.woods@example.com",
+      "login": {
+        "uuid": "fe8681da-fbd8-49e5-8cc1-6162a9fde2e3",
+        "username": "tinyrabbit367",
+        "password": "pool6123",
+        "salt": "3fcwFwDh",
+        "md5": "d43d3d3481f3b4d5474a50784311114f",
+        "sha1": "157aeffc488a17941be08d146352991eb789bc6b",
+        "sha256": "687b62543115c25326aafda9ad00f6f48600ca4fc9e4252ca57afcb76c83d6d0"
+      },
+      "dob": { "date": "1978-05-17T10:56:30.686Z", "age": 43 },
+      "registered": { "date": "2016-08-21T21:05:16.351Z", "age": 5 },
+      "phone": "015396 08869",
+      "cell": "0752-605-287",
+      "id": { "name": "NINO", "value": "RS 71 08 57 R" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/70.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/70.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/70.jpg"
+      },
+      "nat": "GB"
+    }
+  ]
+}
