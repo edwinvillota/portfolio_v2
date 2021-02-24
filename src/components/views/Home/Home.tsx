@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, ViewTitle } from './styles';
 
 const Home: React.FC = () => (
   <Container>
-    <h1>Home View</h1>
+    <ViewTitle>Home View</ViewTitle>
   </Container>
 );
 
