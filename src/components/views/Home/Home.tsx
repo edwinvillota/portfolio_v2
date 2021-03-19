@@ -1,10 +1,7 @@
-import React from 'react';
-import { Container, ViewTitle } from './styles';
+import * as React from 'react';
 
-const Home: React.FC = () => (
-  <Container>
-    <ViewTitle>Home View</ViewTitle>
-  </Container>
-);
+const Home: React.FC = () => {
+  return <h1>Home</h1>;
+};
 
 export default Home;
