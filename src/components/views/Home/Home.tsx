@@ -1,7 +1,16 @@
 import * as React from 'react';
+import { Background } from 'components/organisms';
+
+import { HomeView, Section } from './styles';
 
 const Home: React.FC = () => {
-  return <h1>Home</h1>;
+  return (
+    <HomeView>
+      <Section>
+        <Background />
+      </Section>
+    </HomeView>
+  );
 };
 
 export default Home;

@@ -2,11 +2,12 @@ import { DefaultTheme } from 'styled-components';
 
 const LightTheme: DefaultTheme = {
   colors: {
-    main: '#F05454',
-    secondary: '#30475E',
+    main: '#FCA311',
+    secondary: '#14213D',
     background: '#FFFFFF',
-    text: '#000000',
-    gray: '#DDDDDD',
+    gray: '#E5E5E5',
+    white: '#FFFFFF',
+    black: '#000000',
   },
 };
 
