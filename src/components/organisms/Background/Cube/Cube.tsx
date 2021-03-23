@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useRef, useState, useEffect } from 'react';
 import { MeshProps, useFrame } from 'react-three-fiber';
+import { DefaultTheme } from 'styled-components';
 import type { Mesh } from 'three';
 
 enum MovementsEnum {
@@ -17,7 +18,11 @@ type getMovementsReturnType = {
   newMovement: MovementsEnum;
 };
 
-const Cube: React.FC<MeshProps> = (props) => {
+interface CubeProps extends MeshProps {
+  theme?: DefaultTheme;
+}
+
+const Cube: React.FC<CubeProps> = ({ theme, ...props }) => {
   const mesh = useRef<Mesh>();
   const [hovered, setHovered] = useState(false);
   const [movement, setMovement] = useState<MovementsEnum>(MovementsEnum.Sleep);
@@ -88,7 +93,7 @@ const Cube: React.FC<MeshProps> = (props) => {
       }}
     >
       <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? 'orange' : 'white'} />
+      <meshStandardMaterial color={hovered ? theme?.colors.main.primary : 'white'} />
     </mesh>
   );
 };

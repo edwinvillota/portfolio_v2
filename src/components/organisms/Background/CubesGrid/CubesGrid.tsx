@@ -2,13 +2,15 @@ import * as React from 'react';
 import { useMemo } from 'react';
 import { Cube } from '../Cube';
 import { Box } from '@react-three/flex';
+import { DefaultTheme } from 'styled-components';
 
 type CubesGridProps = {
   rows: number;
   cubesPerFile: number;
+  theme?: DefaultTheme;
 };
 
-const CubesGrid: React.FC<CubesGridProps> = ({ rows, cubesPerFile }) => {
+const CubesGrid: React.FC<CubesGridProps> = ({ rows, cubesPerFile, theme }) => {
   const cubeRows = useMemo(() => {
     const temp = [];
 
@@ -36,7 +38,7 @@ const CubesGrid: React.FC<CubesGridProps> = ({ rows, cubesPerFile }) => {
     <Box key={`Row_${i}`} flexDirection="row" alignItems="center" justifyContent="center">
       {cr.map((cube, j) => (
         <Box key={`Row_${i}Box_${j}`} centerAnchor>
-          <Cube scale={[cube.x, cube.y, 50]} position={[0, 0, cube.z]} />
+          <Cube scale={[cube.x, cube.y, 50]} position={[0, 0, cube.z]} theme={theme} />
         </Box>
       ))}
     </Box>

@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const LightTheme: DefaultTheme = {
+const PurpleAndBlue: DefaultTheme = {
   colors: {
     main: {
       primary: '#8739f9',
@@ -31,4 +31,4 @@ const LightTheme: DefaultTheme = {
   },
 };
 
-export default LightTheme;
+export default PurpleAndBlue;

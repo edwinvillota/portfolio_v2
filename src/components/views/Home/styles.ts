@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const HomeView = styled.div`
+export const StyledView = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const Section = styled.section`
+export const StyledSection = styled.section`
   display: flex;
   position: absolute;
   top: 0;
@@ -15,7 +15,7 @@ export const Section = styled.section`
   z-index: 0;
 `;
 
-export const Title = styled.h1`
+export const StyledTitle = styled.h1`
   display: flex;
   font-size: 40px;
   z-index: 5;
