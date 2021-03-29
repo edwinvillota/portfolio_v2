@@ -3,9 +3,9 @@ import { DefaultTheme } from 'styled-components';
 const PurpleAndBlue: DefaultTheme = {
   colors: {
     main: {
-      primary: '#8739f9',
+      primary: '#E94166',
       accent: '#37b9f1',
-      grey: '#f2f5f5',
+      grey: '#242424',
     },
     dark: {
       dark1: '#100f10',

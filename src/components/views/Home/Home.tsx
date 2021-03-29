@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <StyledSection>
         <Background viewportType={viewportType} />
       </StyledSection>
-      <StyledTitle>Edwin Jair Villota Calderon</StyledTitle>
+      {/* <StyledTitle>Edwin Jair Villota Calderon</StyledTitle> */}
     </StyledView>
   );
 };
