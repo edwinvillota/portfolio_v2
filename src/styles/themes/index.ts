@@ -1,1 +1,1 @@
-export { default as LightTheme } from './LightTheme';
+export { default as PurpleAndBlue } from './PurpleAndBlue';
