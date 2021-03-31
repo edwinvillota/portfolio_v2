@@ -2,21 +2,22 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    name: string;
     colors: {
-      main: {
-        primary: string;
-        accent: string;
-        grey: string;
-      };
+      lShades: string;
+      lAccent: string;
+      main: string;
+      dAccent: string;
+      dShades: string;
       dark: {
         dark1: string;
         dark2: string;
         dark3: string;
       };
-      font: {
-        normal: string;
-        label: string;
-        disabled: string;
+      light: {
+        light1: string;
+        light2: string;
+        light3: string;
       };
     };
     lengths: {

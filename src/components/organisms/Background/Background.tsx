@@ -4,7 +4,7 @@ import { Canvas, useFrame, useThree } from 'react-three-fiber';
 import { Flex } from '@react-three/flex';
 import { CubesGrid } from './CubesGrid';
 import * as THREE from 'three';
-import { ViewPortTypesEnum } from 'ts/enums';
+import { ViewPortTypes } from 'ts/enums';
 import { ThemeContext } from 'styled-components';
 
 function Rig() {
@@ -14,7 +14,7 @@ function Rig() {
 }
 
 type BackgroundProps = {
-  viewportType: ViewPortTypesEnum;
+  viewportType: ViewPortTypes;
 };
 
 const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
@@ -22,13 +22,13 @@ const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
 
   const SelectedViewportGrid = () => {
     switch (viewportType) {
-      case ViewPortTypesEnum.phone:
+      case ViewPortTypes.phone:
         return <CubesGrid theme={theme} rows={12} cubesPerFile={6} />;
-      case ViewPortTypesEnum.tablet:
+      case ViewPortTypes.tablet:
         return <CubesGrid theme={theme} rows={12} cubesPerFile={12} />;
-      case ViewPortTypesEnum.desktop:
+      case ViewPortTypes.desktop:
         return <CubesGrid theme={theme} rows={12} cubesPerFile={25} />;
-      case ViewPortTypesEnum.largeDesktop:
+      case ViewPortTypes.largeDesktop:
         return <CubesGrid theme={theme} rows={12} cubesPerFile={25} />;
       default:
         return <CubesGrid theme={theme} rows={12} cubesPerFile={6} />;

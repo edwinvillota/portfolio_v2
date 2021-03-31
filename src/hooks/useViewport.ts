@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react';
-import { ViewPortTypesEnum } from 'ts/enums';
+import { ViewPortTypes } from 'ts/enums';
 
-const getViewport = (): ViewPortTypesEnum => {
+const getViewport = (): ViewPortTypes => {
   const viewPortWidth = document.getElementsByTagName('html')[0].offsetWidth;
 
   if (viewPortWidth < 768) {
-    return ViewPortTypesEnum.phone;
+    return ViewPortTypes.phone;
   }
 
   if (viewPortWidth < 992) {
-    return ViewPortTypesEnum.tablet;
+    return ViewPortTypes.tablet;
   }
 
   if (viewPortWidth < 1200) {
-    return ViewPortTypesEnum.desktop;
+    return ViewPortTypes.desktop;
   }
 
-  return ViewPortTypesEnum.largeDesktop;
+  return ViewPortTypes.largeDesktop;
 };
 
-export default function useViewport(): ViewPortTypesEnum[] {
+export default function useViewport(): ViewPortTypes[] {
   const [viewport, setViewport] = useState(getViewport());
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const oldResize: ReturnType<(a: UIEvent) => any> | null = window.onresize;

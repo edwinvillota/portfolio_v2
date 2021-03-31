@@ -1,1 +1,1 @@
-export { default as PurpleAndBlue } from './PurpleAndBlue';
+export { default as Default } from './Default';

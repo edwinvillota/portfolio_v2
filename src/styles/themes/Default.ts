@@ -1,21 +1,22 @@
 import { DefaultTheme } from 'styled-components';
 
-const PurpleAndBlue: DefaultTheme = {
+const Default: DefaultTheme = {
+  name: 'Default',
   colors: {
-    main: {
-      primary: '#E94166',
-      accent: '#37b9f1',
-      grey: '#242424',
-    },
+    lShades: '#f8fafa',
+    lAccent: '#f3be50',
+    main: '#e94166',
+    dAccent: '#2C7593',
+    dShades: '#100f10',
     dark: {
       dark1: '#100f10',
       dark2: '#1b1b1b',
       dark3: '#242424',
     },
-    font: {
-      normal: '#565360',
-      label: '#908e9b',
-      disabled: '#e1dfe9',
+    light: {
+      light1: '#ecf0f1',
+      light2: '#f2f5f5',
+      light3: '#fdfefe',
     },
   },
   lengths: {
@@ -31,4 +32,4 @@ const PurpleAndBlue: DefaultTheme = {
   },
 };
 
-export default PurpleAndBlue;
+export default Default;

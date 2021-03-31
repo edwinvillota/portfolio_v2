@@ -1,12 +1,15 @@
-import React, { HTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import { StyledButton } from './styles';
+import { SizeVariants, ColorVariants } from 'ts/enums';
 
-interface TextButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface TextButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
+  sizeVariant: SizeVariants;
+  colorVariant: ColorVariants;
 }
 
-const TextButton: React.FC<TextButtonProps> = ({ label, ...props }) => (
-  <StyledButton {...props}>
+const TextButton: React.FC<TextButtonProps> = ({ label, sizeVariant, colorVariant, ...props }) => (
+  <StyledButton {...props} sizeVariant={sizeVariant} colorVariant={colorVariant}>
     <span>{label}</span>
   </StyledButton>
 );
