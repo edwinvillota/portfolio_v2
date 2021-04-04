@@ -93,7 +93,7 @@ const Cube: React.FC<CubeProps> = ({ theme, ...props }) => {
       }}
     >
       <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? theme?.colors.main.primary : '#1B1B1B'} />
+      <meshStandardMaterial color={hovered ? theme?.colors.main : theme?.colors.background?.bg3} />
     </mesh>
   );
 };

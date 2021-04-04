@@ -19,6 +19,27 @@ declare module 'styled-components' {
         light2: string;
         light3: string;
       };
+      background?: {
+        bg1: string;
+        bg2: string;
+        bg3: string;
+      };
+      buttons: {
+        colors: {
+          primary: string;
+          link: string;
+          info: string;
+          success: string;
+          warning: string;
+          danger: string;
+        };
+        sizes: {
+          small: string;
+          normal: string;
+          medium: string;
+          large: string;
+        };
+      };
     };
     lengths: {
       sm1: string;

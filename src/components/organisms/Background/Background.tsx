@@ -5,7 +5,7 @@ import { Flex } from '@react-three/flex';
 import { CubesGrid } from './CubesGrid';
 import * as THREE from 'three';
 import { ViewPortTypes } from 'ts/enums';
-import { ThemeContext } from 'styled-components';
+import { ThemeCtx } from 'context/ThemeCtx';
 
 function Rig() {
   const { camera, mouse } = useThree();
@@ -18,7 +18,7 @@ type BackgroundProps = {
 };
 
 const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(ThemeCtx);
 
   const SelectedViewportGrid = () => {
     switch (viewportType) {
@@ -39,7 +39,7 @@ const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
     <Canvas
       shadowMap
       camera={{ fov: 60, position: [0, 0, 75], near: 1, far: 150 }}
-      onCreated={(state) => state.gl.setClearColor(theme.colors.main.grey)}
+      onCreated={(state) => state.gl.setClearColor(theme.colors.background?.bg1 || 'white')}
       updateDefaultCamera={true}
     >
       <ambientLight intensity={0.5} color="white" />

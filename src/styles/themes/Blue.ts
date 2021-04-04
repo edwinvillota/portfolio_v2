@@ -1,21 +1,21 @@
 import { DefaultTheme } from 'styled-components';
 
-const Default: DefaultTheme = {
-  name: 'Default',
+const Blue: DefaultTheme = {
+  name: 'Blue',
   colors: {
-    lShades: '#f8fafa',
-    lAccent: '#f3be50',
-    main: '#e94166',
-    dAccent: '#2C7593',
-    dShades: '#100f10',
+    lShades: '#f1f1f0',
+    lAccent: '#add1d4',
+    main: '#597288',
+    dAccent: '#344d54',
+    dShades: '#1c2c37',
     buttons: {
       colors: {
-        primary: '#e94166',
-        link: '#485fc7',
-        info: '#3e8ed0',
-        success: '#48c78e',
-        warning: '#ffe08a',
-        danger: '#f14668',
+        primary: '#597288',
+        link: '#999999',
+        info: '#0b1115',
+        success: '#509d61',
+        warning: '#cd8d29',
+        danger: '#f44336',
       },
       sizes: {
         small: '12px',
@@ -48,4 +48,4 @@ const Default: DefaultTheme = {
   },
 };
 
-export default Default;
+export default Blue;

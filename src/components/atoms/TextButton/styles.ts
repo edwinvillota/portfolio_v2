@@ -1,15 +1,22 @@
 import styled from 'styled-components';
-import { SizeVariants, ColorVariants } from 'ts/enums';
+import { ButtonColorVariants, ButtonSizeVariants } from 'ts/enums';
+import { ButtonTypography } from 'styles/Buttons';
 interface ButtonProps {
-  readonly sizeVariant: SizeVariants;
-  readonly colorVariant: ColorVariants;
+  readonly sizeVariant: ButtonSizeVariants;
+  readonly colorVariant: ButtonColorVariants;
+  readonly fullWidth?: boolean;
+  readonly outlined?: boolean;
+  readonly rounded?: boolean;
+  readonly isLoading?: boolean;
 }
 
 export const StyledButton = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: ${(props) => props.theme.lengths.md2};
-  height: ${(props) => props.theme.lengths[props.sizeVariant]};
-  background-color: ${(props) => props.theme.colors[props.colorVariant]};
+  ${({ sizeVariant }) => ButtonTypography({ size: sizeVariant })};
+  background-color: ${({ theme, outlined, colorVariant }) =>
+    !outlined ? theme.colors.buttons.colors[colorVariant] : 'transparent'};
+  color: ${({ theme }) => theme.colors.light.light3};
+  border-radius: ${({ rounded }) => (rounded ? '50px' : '0')};
 `;

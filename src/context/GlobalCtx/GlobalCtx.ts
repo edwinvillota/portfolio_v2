@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ViewPortTypesEnum } from 'ts/enums';
+import { ViewPortTypes } from 'ts/enums';
 
 interface IGlobalCtx {
-  viewportType: ViewPortTypesEnum;
+  viewportType: ViewPortTypes;
 }
 
 const GlobalCtx = React.createContext({} as IGlobalCtx);
