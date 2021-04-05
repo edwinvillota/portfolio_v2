@@ -75,7 +75,7 @@ const ThemeCtxProvider: React.FC = ({ children }) => {
 export const Theme: React.FC = ({ children }) => {
   const { theme, isLoading } = useContext(ThemeCtx);
 
-  if (!isLoading) {
+  if (!isLoading && theme) {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle />

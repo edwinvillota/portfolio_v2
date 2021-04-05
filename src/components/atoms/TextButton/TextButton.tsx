@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { StyledButton } from './styles';
+import { StyledButton } from './TextButtonStyles';
 import { ButtonColorVariants, ButtonSizeVariants } from 'ts/enums';
 
 export interface TextButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

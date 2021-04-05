@@ -17,6 +17,12 @@ export const StyledButton = styled.button<ButtonProps>`
   ${({ sizeVariant }) => ButtonTypography({ size: sizeVariant })};
   background-color: ${({ theme, outlined, colorVariant }) =>
     !outlined ? theme.colors.buttons.colors[colorVariant] : 'transparent'};
-  color: ${({ theme }) => theme.colors.light.light3};
+  color: ${({ theme, outlined, colorVariant }) =>
+    outlined ? theme.colors.buttons.colors[colorVariant] : theme.colors.light.light3};
   border-radius: ${({ rounded }) => (rounded ? '50px' : '0')};
+  border: ${({ outlined, theme, colorVariant }) =>
+    outlined ? `solid 1px ${theme.colors.buttons.colors[colorVariant]}` : 'none'};
+  width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
+  cursor: pointer;
+  outline: none;
 `;
