@@ -16,6 +16,7 @@ export const Container = styled.label<CommonProps>`
   border-radius: 50px;
   padding: 0 4.5px;
   cursor: pointer;
+  z-index: 1;
 `;
 
 export const IconWrapper = styled.div<CommonProps>`

@@ -2,12 +2,12 @@ import * as React from 'react';
 import { useState, useContext, useEffect } from 'react';
 import { ThemeCtx } from 'context/ThemeCtx';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { Default } from 'styles/themes';
+import { Default, Blue } from 'styles/themes';
 import { GlobalStyle } from 'styles/Global';
 
 const ThemeCtxProvider: React.FC = ({ children }) => {
   const [isLoading, setLoading] = useState<boolean>(false);
-  const [theme, setTheme] = useState<DefaultTheme>(Default);
+  const [theme, setTheme] = useState<DefaultTheme>(Blue);
   const [themeMode, setThemeMode] = useState<'Dark' | 'Light'>('Light');
 
   const switchTheme = ({ theme }: { theme: DefaultTheme }) => {

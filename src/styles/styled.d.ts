@@ -19,7 +19,7 @@ declare module 'styled-components' {
         light2: string;
         light3: string;
       };
-      background?: {
+      background: {
         bg1: string;
         bg2: string;
         bg3: string;

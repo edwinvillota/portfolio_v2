@@ -3,17 +3,25 @@ import { useContext } from 'react';
 import { GlobalCtx } from 'context/GlobalCtx';
 import { ThemeCtx } from 'context/ThemeCtx';
 import { ThemeModeSwitch } from 'components/atoms';
-//import { Background } from 'components/organisms';
+import { Background } from 'components/organisms';
 
-import { StyledView, StyledSection, StyledTitle } from './styles';
+import { StyledView, BackgroundSection, StyledTitle, HomeSection, InfoWrapper } from './styles';
 
 const Home: React.FC = () => {
   const { viewportType } = useContext(GlobalCtx);
-  const { themeMode, switchThemeMode } = useContext(ThemeCtx);
+  const { themeMode } = useContext(ThemeCtx);
+
   return (
     <StyledView>
-      <StyledTitle>Edwin Jair Villota Calderon</StyledTitle>
-      <ThemeModeSwitch />
+      <BackgroundSection>
+        <Background viewportType={viewportType} />
+      </BackgroundSection>
+      <HomeSection>
+        <InfoWrapper>
+          <StyledTitle themeMode={themeMode}>Edwin Jair Villota Calderon</StyledTitle>
+        </InfoWrapper>
+        <ThemeModeSwitch />
+      </HomeSection>
     </StyledView>
   );
 };

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useContext } from 'react';
-import { Canvas, useFrame, useThree } from 'react-three-fiber';
+import { Canvas, CanvasContext, useFrame, useThree } from 'react-three-fiber';
 import { Flex } from '@react-three/flex';
 import { CubesGrid } from './CubesGrid';
 import * as THREE from 'three';
@@ -19,6 +19,15 @@ type BackgroundProps = {
 
 const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
   const { theme } = useContext(ThemeCtx);
+  const canvasContext = useRef<CanvasContext>();
+
+  useEffect(() => {
+    if (canvasContext.current) {
+      const canvas = canvasContext.current;
+
+      canvas.gl.setClearColor(theme.colors.background.bg1);
+    }
+  }, [theme]);
 
   const SelectedViewportGrid = () => {
     switch (viewportType) {
@@ -39,7 +48,9 @@ const Background: React.FC<BackgroundProps> = ({ viewportType }) => {
     <Canvas
       shadowMap
       camera={{ fov: 60, position: [0, 0, 75], near: 1, far: 150 }}
-      onCreated={(state) => state.gl.setClearColor(theme.colors.background?.bg1 || 'white')}
+      onCreated={(state) => {
+        canvasContext.current = state;
+      }}
       updateDefaultCamera={true}
     >
       <ambientLight intensity={0.5} color="white" />

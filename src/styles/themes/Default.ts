@@ -30,9 +30,14 @@ const Default: DefaultTheme = {
       dark3: '#242424',
     },
     light: {
-      light1: '#ecf0f1',
+      light1: '#fdfefe',
       light2: '#f2f5f5',
-      light3: '#fdfefe',
+      light3: '#ecf0f1',
+    },
+    background: {
+      bg1: '#fdfefe',
+      bg2: '#f2f5f5',
+      bg3: '#ecf0f1',
     },
   },
   lengths: {
