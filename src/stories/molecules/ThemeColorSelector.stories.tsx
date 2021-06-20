@@ -1,12 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ComponentProps } from 'react';
 import { Story } from '@storybook/react';
 import { Theme, ThemeCtxProvider } from 'context/ThemeCtx';
-import { ThemeModeSwitch } from 'components/atoms';
+import { ThemeColorSelector } from 'components/molecules';
 
 export default {
-  title: 'Atoms/ThemeModeSwitch',
-  component: ThemeModeSwitch,
+  title: 'Molecules/ThemeColorSelector',
+  component: ThemeColorSelector,
   decorators: [
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     (StoryFn: any) => {
@@ -21,6 +20,6 @@ export default {
   ],
 };
 
-const Template: Story<ComponentProps<typeof ThemeModeSwitch>> = (args) => <ThemeModeSwitch />;
+const Template: Story<ComponentProps<typeof ThemeColorSelector>> = (args) => <ThemeColorSelector />;
 
 export const DefaultStory = Template.bind({});

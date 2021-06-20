@@ -4,7 +4,7 @@ import { TextButton } from 'components/atoms';
 import { ButtonSizeVariants, ButtonColorVariants } from 'ts/enums';
 
 export default {
-  title: 'TextButton',
+  title: 'Atoms/TextButton',
   component: TextButton,
   argTypes: {
     sizeVariant: {
