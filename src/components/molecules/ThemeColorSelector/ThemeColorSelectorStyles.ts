@@ -19,6 +19,9 @@ export const Container = styled.button<ContainerProps>`
   box-shadow: ${({ isOpen }) => (isOpen ? '0 4px 4px rgba(0,0,0,.25)' : 'none')};
   border-radius: ${({ isOpen }) => (isOpen ? '79px' : 'none')};
   max-height: ${({ isOpen }) => (isOpen ? '300px' : '50px')};
+  transition: max-height 0.5s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+  transition-delay: ${({ isOpen }) => (isOpen ? '0, 0, 1s' : '1s, 2s, 2s')};
+  z-index: 99;
 `;
 
 export const ButtonsList = styled.div`

@@ -1,20 +1,20 @@
 import { DefaultTheme } from 'styled-components';
 
-const Blue: DefaultTheme = {
-  name: 'Blue',
+const Purple: DefaultTheme = {
+  name: 'Purple',
   colors: {
     lShades: '#fafafa',
-    lAccent: '#33b3ff',
-    main: '#2185d5',
-    dAccent: '#f3f3f3',
-    dShades: '#303841',
+    lAccent: '#b643cd',
+    main: '#7952b3',
+    dAccent: '#e1e8eb',
+    dShades: '#343a40',
     buttons: {
       colors: {
-        primary: '#2184d5',
-        link: '#2184d5',
-        info: '#303841',
-        success: '#3fa278',
-        warning: '#bc9240',
+        primary: '#7952b3',
+        link: '#7952b3',
+        info: '#343a40',
+        success: '#82b43a',
+        warning: '#ffa402',
         danger: '#f44336',
       },
       sizes: {
@@ -53,4 +53,4 @@ const Blue: DefaultTheme = {
   },
 };
 
-export default Blue;
+export default Purple;

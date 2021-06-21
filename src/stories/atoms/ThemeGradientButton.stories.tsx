@@ -2,7 +2,7 @@ import React, { ComponentProps } from 'react';
 import { Story } from '@storybook/react';
 import { Theme, ThemeCtxProvider } from 'context/ThemeCtx';
 import { ThemeGradientButton } from 'components/atoms';
-import { Default, Blue } from 'styles/themes';
+import { Default, Blue, Green, Purple } from 'styles/themes';
 
 export default {
   title: 'Atoms/ThemeGradientButton',
@@ -33,4 +33,16 @@ export const BlueTheme = Template.bind({});
 
 BlueTheme.args = {
   themeSchema: Blue,
+};
+
+export const GreenTheme = Template.bind({});
+
+GreenTheme.args = {
+  themeSchema: Green,
+};
+
+export const PurpleTheme = Template.bind({});
+
+PurpleTheme.args = {
+  themeSchema: Purple,
 };

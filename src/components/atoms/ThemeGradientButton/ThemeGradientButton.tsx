@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import { DefaultTheme } from 'styled-components';
 import { Container } from './ThemeGradientButtonStyles';
 
-type ThemeGradientButtonProps = {
+interface ThemeGradientButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   themeSchema: DefaultTheme;
-};
+}
 
-export const ThemeGradientButton: React.FC<ThemeGradientButtonProps> = ({ themeSchema }) => {
-  return <Container themeSchema={themeSchema} />;
+export const ThemeGradientButton: React.FC<ThemeGradientButtonProps> = ({ themeSchema, ...props }) => {
+  return <Container themeSchema={themeSchema} {...props} />;
 };
 
 export default ThemeGradientButton;
